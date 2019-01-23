@@ -1,0 +1,59 @@
+.container {
+  display: grid;
+  grid-template-columns: 50% auto;
+}
+
+.col {
+  padding: 0.4em 1.3em;
+}
+
+.color-dark {
+  background: #1b2caf;
+}
+
+.color-light {
+  background: #2285ff;
+}
+
+input.txt {
+  border: 0;
+  padding: 1em;
+  width: 80%;
+  margin-bottom: 2em;
+}
+
+input.btn {
+  border: 0;
+  display: block;
+  padding: 1em 3em;
+  background: greenyellow;
+  color: #1b2caf;
+  margin-bottom: 1em;
+  cursor: pointer;
+}
+
+.life-container {
+  background: #8190d6;
+  padding: 0.5em;
+  font-weight: bold;
+  cursor: pointer;
+}
+.goalAnimaton {
+  animation-name: goalLoad;
+  animation-duration: 0.7s;
+}
+
+@keyframes goalLoad {
+  0% {
+    opacity: 0;
+    transform: translateY(150%);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateY(-25%);
+  }
+  100% {
+    opacity: 1;
+    transform: transLateY(0);
+  }
+}
